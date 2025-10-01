@@ -1,7 +1,7 @@
 Algoritmo "Media_ponderada_nota"
 
 Var
-   nota_um, nota_dois, media,nota_rec: real
+   nota_um, nota_dois, nota_tres, media,nota_rec: real
 
 Inicio
 //Pedir as informações para o usuário
@@ -11,9 +11,11 @@ Inicio
         escreval("Digite a segunda nota: ")
         leia(nota_dois)
 
+        escreval("Digite a terceira nota: ")
+        leia(nota_tres)
 
 //calcular a média
-        media := (nota_um *2 + nota_dois*3)/5
+        media := (nota_um + nota_dois + nota_tres)/3
 
 //Verificar se o aluno está aprovado ou não
         se media >= 7 entao
@@ -29,5 +31,7 @@ Inicio
                 escreval("Você está Reprovado! Sua nota foi ",nota_rec)
            fimse
        fimse
+
+
 
 Fimalgoritmo
